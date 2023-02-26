@@ -97,6 +97,10 @@
       ></textarea>
     </div>
 
+    <div [hidden]="!postError" class="alert alert-danger">
+      {{ postErrorMsg }}
+    </div>
+
     <button class="btn btn-primary">Send</button>
   </form>
 </div>
